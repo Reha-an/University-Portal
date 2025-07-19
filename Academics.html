@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hogwarts University - Academics Timetable</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="shortcut icon" href="hogwarts-7917.png">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Q9rSrjX6d0Y+lp7OT1to2jAZsfs2tOTBBZeWaSMYzh2BDCsj0g2j5DIWGU0gYzeV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpWw90G06vkvJL3P0t0jyZ8eJ7FqHLKpxR" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7e4b9; 
+    }
+    .logo {
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+        }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+      color: rgba(255, 217, 0, 0.9); 
+    }
+    section {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #9c3f00;
+    }
+
+    h3 {
+      color: #9c3f00;
+    }
+
+    .year {
+      margin-bottom: 30px;
+    }
+
+    .year h3 {
+      font-size: 24px;
+      color: #ffb300;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #000;
+    }
+
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .course {
+      background-color: #ffb300;
+      color: #333;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .logo {
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+        }
+        #nav {
+            background-color: black;
+            padding: 10px;
+        }
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        #nav li {
+            margin-right: 15px;
+        }
+        #nav li:last-child {
+            margin-right: 0;
+        }
+        #nav a {
+            color: gold;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        #nav a:hover {
+            color: grey;
+        }
+
+        @media (max-width: 768px) {
+            #nav ul {
+                flex-direction: column;
+            }
+            #nav li {
+                margin: 5px 0;
+            }
+            #nav .navbar-toggler {
+                margin-top: 5px;
+            }
+            #nav .collapse.show {
+                background-color: #333333;
+            }
+        }
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" id="nav">
+    <a href="home.html" class="navbar-brand">
+        <img src="hogwarts-7917.png" alt="Hogwarts Alumni" class="logo">
+        Hogwarts University
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">Admission</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="alumni.html">Alumni</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Academics.html">Academics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="faculty.html">Faculty</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="campus1.html">Campus</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="events and news.html">Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+  <section>
+    <h2>Courses Offered at Hogwarts University</h2>
+    <h3>CORE</h3>
+    <ul>
+      <li>Potions</li>
+      <li>Transfiguration</li>
+      <li>Defense Against the Dark Arts</li>
+      <li>Charms</li>
+      <li>Herbology</li>
+      <li>Flying Lessons (First Year Only)</li>
+      <li>History of Magic</li>
+      <li>Astronomy</li>
+    </ul>
+    <h3>Year 3-4 Optional (Two Or More)</h3>
+    <ul>
+      <li>Ancient Runes</li>
+      <li>Arithmancy</li>
+      <li>Care of Magical Creatures</li>
+      <li>Divination</li>
+      <li>Muggle Studies</li>
+    </ul>
+    <h3>Extra Curricular</h3>
+    <ul>
+      <li>Ancient Studies</li>
+      <li>Art (Third Year and Above)</li>
+      <li>Muggle Art (Third Year and Above)</li>
+      <li>Earth Magic</li>
+      <li>Music (Third Year and Above)</li>
+      <li>Muggle Music (Third Year and Above)</li>
+      <li>Ghoul Studies</li>
+      <li>Quidditch (Second Year and Above)</li>
+    </ul>
+
+    <h2>Academic Timetable</h2>
+
+    <div class="accordion" id="courseAccordion">
+      <div class="year accordion-item">
+          <h3 class="accordion-header" id="heading1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                  1st Year
+              </button>
+          </h3>
+          <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#courseAccordion">
+              <div class="accordion-body">
+                  <table class="course-table">
+                      <tr>
+                          <th>Day/Time</th>
+                          <th>Potions</th>
+                          <th>Transfiguration</th>
+                          <th>Defense Against the Dark Arts</th>
+                          <th>Charms</th>
+                      </tr>
+                      <tr>
+                          <td>Monday<br>8:00 AM - 10:00 AM</td>
+                          <td class="course">Potions 101</td>
+                          <td class="course">Transfiguration Basics</td>
+                          <td class="course">Defense Basics</td>
+                          <td class="course">Charms 101</td>
+                      </tr>
+                      <tr>
+                          <td>Wednesday<br>9:00 AM - 11:00 AM</td>
+                          <td class="course">Herbology</td>
+                          <td class="course">Flying Lessons</td>
+                          <td class="course">History of Magic</td>
+                          <td class="course">Astronomy</td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="year accordion-item">
+          <h3 class="accordion-header" id="heading2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  2nd Year
+              </button>
+          </h3>
+          <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#courseAccordion">
+              <div class="accordion-body">
+                  <table class="course-table">
+                    <tr>
+                      <th>Day/Time</th>
+                      <th>Potions</th>
+                      <th>Transfiguration</th>
+                      <th>Defense Against the Dark Arts</th>
+                      <th>Charms</th>
+                    </tr>
+                    <tr>
+                      <td>Monday<br>10:00 AM - 12:00 PM</td>
+                      <td class="course">Advanced Potions</td>
+                      <td class="course">Human Transfiguration</td>
+                      <td class="course">Defense Advanced</td>
+                      <td class="course">Enchantments</td>
+                    </tr>
+                    <tr>
+                      <td>Wednesday<br>11:00 AM - 1:00 PM</td>
+                      <td class="course">Care of Magical Creatures</td>
+                      <td class="course">Alchemy</td>
+                      <td class="course">Magical Theory</td>
+                      <td class="course">Ancient Runes</td>
+                    </tr>
+
+                  </table>
+              </div>
+          </div>
+      </div>
+
+      <div class="year accordion-item">
+          <h3 class="accordion-header" id="heading3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  3rd Year
+              </button>
+          </h3>
+          <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#courseAccordion">
+              <div class="accordion-body">
+                  <table class="course-table">
+                    <tr>
+                      <th>Day/Time</th>
+                      <th>Potions</th>
+                      <th>Transfiguration</th>
+                      <th>Defense Against the Dark Arts</th>
+                      <th>Charms</th>
+                    </tr>
+                    <tr>
+                      <td>Monday<br>1:00 PM - 3:00 PM</td>
+                      <td class="course">Advanced Potions</td>
+                      <td class="course">Animagus Training</td>
+                      <td class="course">Defense Advanced</td>
+                      <td class="course">Enchantments</td>
+                    </tr>
+                    <tr>
+                      <td>Wednesday<br>2:00 PM - 4:00 PM</td>
+                      <td class="course">Magical Herbology</td>
+                      <td class="course">Intermediate Transfiguration</td>
+                      <td class="course">Dark Arts Defense</td>
+                      <td class="course">Spell Creation</td>
+                    </tr>
+
+                  </table>
+              </div>
+          </div>
+      </div>
+
+      <div class="year accordion-item">
+          <h3 class="accordion-header" id="heading4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  4th Year
+              </button>
+          </h3>
+          <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#courseAccordion">
+              <div class="accordion-body">
+                  <table class="course-table">
+                    <tr>
+                      <th>Day/Time</th>
+                      <th>Potions</th>
+                      <th>Transfiguration</th>
+                      <th>Defense Against the Dark Arts</th>
+                      <th>Charms</th>
+                    </tr>
+                    <tr>
+                      <td>Monday<br>3:00 PM - 5:00 PM</td>
+                      <td class="course">Advanced Potions</td>
+                      <td class="course">Advanced Transfiguration</td>
+                      <td class="course">Advanced Defense</td>
+                      <td class="course">Advanced Charms</td>
+                    </tr>
+                    <tr>
+                      <td>Wednesday<br>4:00 PM - 6:00 PM</td>
+                      <td class="course">Magical History</td>
+                      <td class="course">Advanced Ancient Runes</td>
+                      <td class="course">Apparition Training</td>
+                      <td class="course">Wizarding Ethics</td>
+                    </tr>
+
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+
+  <footer>
+    <p>&copy; Hogwarts University. All rights reserved.</p>
+  </footer>
+</body>
+</html>

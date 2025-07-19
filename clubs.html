@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Q9rSrjX6d0Y+lp7OT1to2jAZsfs2tOTBBZeWaSMYzh2BDCsj0g2j5DIWGU0gYzeV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpWw90G06vkvJL3P0t0jyZ8eJ7FqHLKpxR" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        a{
+            text-decoration: none;
+        }
+        .navbar {
+            background-color: #333333;
+        }
+        .navbar-brand {
+            color: gold;
+            font-size: 24px;
+            position: relative;
+            right: 50px;
+        }
+        .navbar-brand:hover {
+            color: grey;
+        }
+        .navbar-nav .nav-link {
+            color: gold;
+        }
+        .navbar-nav .nav-link:hover {
+            color: grey;
+        }
+        .dropdown-item{
+            color: gold;
+        }
+        .dropdown-item:hover{
+            background-color: grey;
+        }
+        .join-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .accordion{
+            margin: 20px auto 20px auto;
+        }
+        .accordion-item{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="logindashboard.html">
+                <img src="hogwarts-7917.png" alt="" class="d-inline-block align-text-bottom" width="35" height="35">
+                Hogwarts University</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="fee.html">Fee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="course-reg.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clubs.html">Clubs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="attendance.html">View Attendance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2>Clubs</h2>
+        <div class="accordion" id="clubsAccordion">
+
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="daClub">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDA" aria-expanded="false" aria-controls="collapseDA">
+                        Dumbledore's Army (DA)
+                    </button>
+                </h3>
+                <div id="collapseDA" class="accordion-collapse collapse" aria-labelledby="daClub" data-bs-parent="#clubsAccordion">
+                    <div class="accordion-body">
+                        <p>The Dumbledore's Army (DA) is a secret student organization led by Harry Potter to teach defensive magic to students. The club was formed to prepare Hogwarts students to defend themselves against the dark forces. It was founded by Harry Potter, Hermione Granger, and Ron Weasley during their fifth year at Hogwarts in response to the Ministry of Magic's lack of action to combat the rise of Lord Voldemort and his followers. The DA played a crucial role during the Second Wizarding War, training students and assisting in the Battle of Hogwarts.</p>
+                        <p>Activities: The members of DA gather in the Room of Requirement to practice various defensive spells and hexes. They learn how to produce a Patronus Charm to protect themselves from Dementors, practice disarming spells like Expelliarmus, and learn how to protect themselves and others in dangerous situations. The club operates secretly and serves as a vital support system for students facing the dark times at Hogwarts.</p>
+                        <p>Current Activity: The DA is organizing a special training session on advanced defensive techniques to counter dark curses and jinxes. All students with a basic knowledge of defensive spells are welcome to join and improve their skills in a safe and controlled environment.</p>
+                        <a class="join-btn" href="mailto:clubs@hogwartuniversity.com">Join</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="gobstonesClub">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGobstones" aria-expanded="false" aria-controls="collapseGobstones">
+                        Gobstones Club
+                    </button>
+                </h3>
+                <div id="collapseGobstones" class="accordion-collapse collapse" aria-labelledby="gobstonesClub" data-bs-parent="#clubsAccordion">
+                    <div class="accordion-body">
+                        <p>The Gobstones Club is for students interested in playing the magical game of Gobstones. Gobstones is a popular wizarding sport played with magical stones that squirt a foul-smelling liquid into the opponent's face when they lose a point. It is a strategic and competitive game, often leading to laughter and friendly rivalry among players. The club encourages sportsmanship and camaraderie among its members.</p>
+                        <p>Activities: The club holds regular Gobstones tournaments where students compete against each other to showcase their skills. Players learn various strategies to surprise and outsmart their opponents. They also discuss and analyze famous Gobstones matches from the past and practice different tactics to improve their gameplay. The Gobstones Club aims to foster a fun and engaging environment for all participants.</p>
+                        <p>Current Activity: The Gobstones Club is hosting the Annual Gobstones Championship, inviting students from all houses to participate and prove their expertise in the game. The winner will receive the prestigious Gobstones Master trophy and a year's supply of Butterbeer!</p>
+                        <a class="join-btn" href="mailto:clubs@hogwartuniversity.com">Join</a>                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="charmsClub">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCharms" aria-expanded="false" aria-controls="collapseCharms">
+                        Charms Club
+                    </button>
+                </h3>
+                <div id="collapseCharms" class="accordion-collapse collapse" aria-labelledby="charmsClub" data-bs-parent="#clubsAccordion">
+                    <div class="accordion-body">
+                        <p>The Charms Club focuses on teaching and practicing various magical charms. Charms are spells that alter the properties of objects, making them move, change appearance, or behave in a certain way. They are an essential part of every witch and wizard's repertoire, used in everyday life and magical duels. The club aims to improve students' wandwork and understanding of the principles behind different charms.</p>
+                        <p>Activities: The club hosts practical workshops where members learn and practice a wide range of charms, including levitation charms, unlocking spells, and summoning charms. Students experiment with charms on various objects to understand their effects and limitations. The Charms Club also organizes friendly charm dueling sessions to hone the skills of its members.</p>
+                        <p>Current Activity: The Charms Club is preparing for the Great Charm Exhibition, where students will showcase their most impressive and creative uses of charms. Professors and experts from the Ministry of Magic will judge the exhibition, and the winner will receive a special commendation for their magical prowess.</p>
+                        <a class="join-btn" href="mailto:clubs@hogwartuniversity.com">Join</a>                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="quidditchClub">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuidditch" aria-expanded="false" aria-controls="collapseQuidditch">
+                        Quidditch Team
+                    </button>
+                </h3>
+                <div id="collapseQuidditch" class="accordion-collapse collapse" aria-labelledby="quidditchClub" data-bs-parent="#clubsAccordion">
+                    <div class="accordion-body">
+                        <p>The Quidditch Team at Hogwarts is one of the most popular and prestigious clubs in the school. Quidditch is a magical sport played on broomsticks, and it consists of four balls: the Quaffle, two Bludgers, and the Golden Snitch. The team has seven players, each with specific positions, and the objective is to score goals while trying to catch the elusive Golden Snitch to earn additional points and end the game.</p>
+                        <p>Activities: The team practices regularly to improve their flying skills, coordination, and teamwork. They play intense matches against other houses and schools. The Quidditch Team also hosts events like Quidditch World Cup screenings, where the entire Hogwarts community comes together to support the national teams.</p>
+                        <p>Current Activity: The Quidditch Team is gearing up for the Inter-House Quidditch Championship. Intense practice sessions are being conducted to ensure that the team is well-prepared to compete against other house teams and claim the championship trophy for their house.</p>
+                        <a class="join-btn" href="mailto:clubs@hogwartuniversity.com">Join</a>                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="slugClub">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSlug" aria-expanded="false" aria-controls="collapseSlug">
+                        Slug Club
+                    </button>
+                </h3>
+                <div id="collapseSlug" class="accordion-collapse collapse" aria-labelledby="slugClub" data-bs-parent="#clubsAccordion">
+                    <div class="accordion-body">
+                        <p>The Slug Club, also known as the Slughorn Club, is a group of talented and gifted students handpicked by Professor Horace Slughorn, the Potions Master at Hogwarts. The club serves as a networking platform for influential and promising students, and its members enjoy exclusive invitations to Slughorn's parties and gatherings. The Slug Club is an excellent opportunity for students to build connections and gain recognition within the magical community.</p>
+                        <p>Activities: The Slug Club hosts lavish parties and dinners where members can interact with influential witches and wizards. The club also organizes special seminars and workshops conducted by renowned experts from various magical fields. Members get valuable advice and guidance on their future careers and ambitions.</p>
+                        <p>Current Activity: The Slug Club is preparing for the Annual Christmas Gala, an extravagant event where members will be joined by prestigious guests from the wizarding world. The gala includes a magical masquerade ball, live performances by famous magical musicians, and a grand feast.</p>
+                        <a class="join-btn" href="mailto:clubs@hogwartuniversity.com">Join</a>                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="duelingClub">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDueling" aria-expanded="false" aria-controls="collapseDueling">
+                        Dueling Club
+                    </button>
+                </h3>
+                <div id="collapseDueling" class="accordion-collapse collapse" aria-labelledby="duelingClub" data-bs-parent="#clubsAccordion">
+                    <div class="accordion-body">
+                        <p>The Dueling Club is a prestigious organization that focuses on teaching students the art of dueling and defensive spells. Dueling is a critical skill for any witch or wizard, especially during times of conflict and danger. The club's mission is to train students to protect themselves and others from dark wizards and witches.</p>
+                        <p>Activities: The club conducts regular practice duels where members learn different dueling techniques and defensive spells. They study the famous duels from history and analyze the strategies used by renowned duelists. The Dueling Club also organizes friendly dueling tournaments to encourage healthy competition and showcase the participants' skills.</p>
+                        <p>Current Activity: The Dueling Club is organizing a special training workshop on countering the Unforgivable Curses. Participants will learn how to defend against curses like the Cruciatus Curse, Imperius Curse, and Killing Curse (Avada Kedavra). It's a challenging yet essential lesson for any aspiring witch or wizard.</p>
+                        <a class="join-btn" href="mailto:clubs@hogwartuniversity.com">Join</a>                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="artClub">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseArt" aria-expanded="false" aria-controls="collapseArt">
+                        Art Club
+                    </button>
+                </h3>
+                <div id="collapseArt" class="accordion-collapse collapse" aria-labelledby="artClub" data-bs-parent="#clubsAccordion">
+                    <div class="accordion-body">
+                        <p>The Art Club is a haven for students who have a passion for magical art and creativity. Art is a form of expression, and the club allows students to explore their imaginations and share their artistic talents with others.</p>
+                        <p>Activities: The club hosts regular art sessions where members indulge in magical painting, sketching, and sculpting. They explore various art styles and techniques, creating mesmerizing magical landscapes, portraits of magical creatures, and imaginative illustrations. The Art Club also collaborates with other clubs and events to provide magical decorations and visual elements.</p>
+                        <p>Current Activity: The Art Club is working on creating a mural that celebrates the magical creatures of the wizarding world. The mural will be displayed in the Grand Hall during the upcoming magical creatures awareness week. All artists, whether experienced or beginners, are welcome to join and contribute to this magical masterpiece.</p>
+                        <a class="join-btn" href="mailto:clubs@hogwartuniversity.com">Join</a>                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

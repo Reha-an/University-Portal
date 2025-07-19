@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Q9rSrjX6d0Y+lp7OT1to2jAZsfs2tOTBBZeWaSMYzh2BDCsj0g2j5DIWGU0gYzeV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpWw90G06vkvJL3P0t0jyZ8eJ7FqHLKpxR" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .details{
+            width: 80%;
+            height: 70%;
+            border: 1px solid gold;
+            box-shadow: 1px 1px 1px 1px #333333;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .details h3{
+            font-size: 24px;
+            color: gold;
+            text-shadow: 1px 1px 1px black;
+            margin: 20px 20px 20px 20px;
+        }
+        .details p{
+            margin-left: 20px;
+        }
+        .details span{
+            color: red;
+        }
+        a {
+            text-decoration: none;
+        }
+        .navbar {
+            background-color: #333333;
+        }
+        .navbar-brand {
+            color: gold;
+            font-size: 24px;
+            position: relative;
+            right: 50px;
+        }
+        .navbar-brand:hover {
+            color: grey;
+        }
+        .navbar-nav .nav-link {
+            color: gold;
+        }
+        .navbar-nav .nav-link:hover {
+            color: grey;
+        }
+        .dropdown-item {
+            color: gold;
+        }
+        .dropdown-item:hover {
+            background-color: grey;
+        }
+        .details-struct {
+            width: 50%;
+            margin: 20px;
+        }
+        .circle {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .green {
+            background-color: green;
+        }
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="logindashboard.html">
+                <img src="hogwarts-7917.png" alt="" class="d-inline-block align-text-bottom" width="35" height="35">
+                Hogwarts University
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="fee.html">Fee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="course-reg.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clubs.html">Clubs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="attendance.html">View Attendance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="details">
+        <h3>Attendance Report</h3>
+        <p><strong class="subject">Name:</strong> Daniel Radcliffe</p>
+        <p><strong class="subject">Roll No:</strong> hu.cs.22119</p>
+        <p><strong class="subject">Academic Year:</strong> 2022-2026</p>
+        <p><span class="notice">*</span>Students having attendance below 75% are not eligible for exams without proper reason please check for your <a href="fee.html">fee section</a> for the Fine.</p>
+        <div class="details-struct">
+            <div class="accordion" id="accordion">
+                <div class="accordion-item">
+                    <h4 class="accordion-header" id="yeartwo">
+                        <button class="accordion-button btn-primary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            2nd Year
+                        </button>
+                    </h4>
+                    <div id="collapseOne" class="collapse" aria-labelledby="yeartwo" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Course Code</th>
+                                        <th>Course Name</th>
+                                        <th>Credits</th>
+                                        <th>Enrollment Status</th>
+                                        <th>Total Classes</th>
+                                        <th>Classes Attended</th>
+                                        <th>Percentage</th>
+                                        <th>Eligibility</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>POT101</td>
+                                        <td>Potions</td>
+                                        <td>3</td>
+                                        <td>Enrolled</td>
+                                        <td>20</td>
+                                        <td>18</td>
+                                        <td>90%</td>
+                                        <td><span class="circle green"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>AST101</td>
+                                        <td>Astronomy</td>
+                                        <td>3</td>
+                                        <td>Enrolled</td>
+                                        <td>20</td>
+                                        <td>19</td>
+                                        <td>95%</td>
+                                        <td><span class="circle green"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HIS101</td>
+                                        <td>History of Magic</td>
+                                        <td>3</td>
+                                        <td>Enrolled</td>
+                                        <td>20</td>
+                                        <td>18</td>
+                                        <td>90%</td>
+                                        <td><span class="circle green"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HER101</td>
+                                        <td>Herbology</td>
+                                        <td>4</td>
+                                        <td>Enrolled</td>
+                                        <td>20</td>
+                                        <td>15</td>
+                                        <td>75%</td>
+                                        <td><span class="circle red"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>FLY101</td>
+                                        <td>Flying Lessons</td>
+                                        <td>2</td>
+                                        <td>Enrolled</td>
+                                        <td>20</td>
+                                        <td>18</td>
+                                        <td>90%</td>
+                                        <td><span class="circle green"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MGC101</td>
+                                        <td>Magical Creatures</td>
+                                        <td>3</td>
+                                        <td>Enrolled</td>
+                                        <td>20</td>
+                                        <td>17</td>
+                                        <td>85%</td>
+                                        <td><span class="circle red"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>DCM101</td>
+                                        <td>Defensive Charms</td>
+                                        <td>3</td>
+                                        <td>Enrolled</td>
+                                        <td>20</td>
+                                        <td>20</td>
+                                        <td>100%</td>
+                                        <td><span class="circle green"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TRN201</td>
+                                        <td>Transfiguration</td>
+                                        <td>5</td>
+                                        <td>Enrolled</td>
+                                        <td>25</td>
+                                        <td>20</td>
+                                        <td>80%</td>
+                                        <td><span class="circle green"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>CHR201</td>
+                                        <td>Charms</td>
+                                        <td>4</td>
+                                        <td>Enrolled</td>
+                                        <td>25</td>
+                                        <td>24</td>
+                                        <td>96%</td>
+                                        <td><span class="circle green"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HER201</td>
+                                        <td>Herbology</td>
+                                        <td>3</td>
+                                        <td>Enrolled</td>
+                                        <td>25</td>
+                                        <td>23</td>
+                                        <td>92%</td>
+                                        <td><span class="circle green"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>DCM201</td>
+                                        <td>Defensive Counter-Curses</td>
+                                        <td>4</td>
+                                        <td>Enrolled</td>
+                                        <td>25</td>
+                                        <td>25</td>
+                                        <td>100%</td>
+                                        <td><span class="circle green"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TRN202</td>
+                                        <td>Advanced Transfiguration</td>
+                                        <td>4</td>
+                                        <td>Enrolled</td>
+                                        <td>25</td>
+                                        <td>21</td>
+                                        <td>84%</td>
+                                        <td><span class="circle red"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>POT202</td>
+                                        <td>Advanced Potions</td>
+                                        <td>4</td>
+                                        <td>Enrolled</td>
+                                        <td>25</td>
+                                        <td>24</td>
+                                        <td>96%</td>
+                                        <td><span class="circle green"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>AST202</td>
+                                        <td>Astrology</td>
+                                        <td>3</td>
+                                        <td>Enrolled</td>
+                                        <td>25</td>
+                                        <td>19</td>
+                                        <td>76%</td>
+                                        <td><span class="circle red"></span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

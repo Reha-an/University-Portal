@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="hogwarts-7917.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Q9rSrjX6d0Y+lp7OT1to2jAZsfs2tOTBBZeWaSMYzh2BDCsj0g2j5DIWGU0gYzeV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpWw90G06vkvJL3P0t0jyZ8eJ7FqHLKpxR" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Hogwarts Faculty</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", sans-serif;
+            background-color: #221f1f;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #221f1f;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #9c3f00;
+            margin-top: 30px;
+        }
+
+        .faculty {
+            display: flex;
+            margin-bottom: 30px;
+            width: 70%;
+        }
+
+        .faculty img {
+            width: 200px; 
+            height: 200px; 
+            margin-right: 20px;
+            border: 2px solid #ffd700;
+        }
+
+        .faculty-details {
+            flex: 1;
+        }
+
+        .faculty-name {
+            font-size: 20px;
+            color: #9c3f00;
+            margin-bottom: 5px;
+        }
+
+        .faculty-subject {
+            font-size: 16px;
+            color: #fffdfd;
+            margin-bottom: 5px;
+        }
+
+        .faculty-bio {
+            font-size: 14px;
+            color: #f9f4f4;
+        }
+
+        footer {
+            text-align: center;
+            color: #ffd700;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        .logo {
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+        }
+        #nav {
+            background-color: black;
+            padding: 10px;
+        }
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        #nav li {
+            margin-right: 15px;
+        }
+        #nav li:last-child {
+            margin-right: 0;
+        }
+        #nav a {
+            color: gold;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        #nav a:hover {
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav" class="navbar navbar-expand-lg">
+        <a href="home.html" class="navbar-brand">
+            <img src="hogwarts-7917.png" alt="Hogwarts Alumni" class="logo">
+            Hogwarts University
+        </a>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">Admission</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="alumni.html">Alumni</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Academics.html">Academics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="faculty.html">Faculty</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="campus1.html">Campus</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="events and news.html">Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Hogwarts University Faculty</h1>
+
+        <div class="faculty">
+            <img src="c23d73d9e605c1d87cad68375caeaca202e64424_00.jpg" alt="Professor Albus Dumbledore">
+            <div class="faculty-details">
+                <div class="faculty-name">Professor Albus Dumbledore</div>
+                <div class="faculty-subject">Headmaster</div>
+                <div class="faculty-bio">The Headmaster of Hogwarts since a few decades before the creation of The Order of the Phoenix. Centuries of magical events.</div>
+            </div>
+        </div>
+
+        <div class="faculty">
+            <img src="Severus-snape1.webp" alt="Professor Severus Snape">
+            <div class="faculty-details">
+                <div class="faculty-name">Professor Severus Snape</div>
+                <div class="faculty-subject">Potions</div>
+                <div class="faculty-bio">Head of Slytherin House and a master of potions. Known for his strict discipline and deep knowledge.</div>
+            </div>
+        </div>
+
+        <div class="faculty">
+            <img src="Copia_de_uhpfilius9it29.webp" alt="Professor Filius Flitwick">
+            <div class="faculty-details">
+                <div class="faculty-name">Professor Filius Flitwick</div>
+                <div class="faculty-subject">Charms</div>
+                <div class="faculty-bio">Head of Ravenclaw House and an expert in charms. Encourages students to explore the magic of spells.</div>
+            </div>
+        </div>
+        
+        <div class="faculty">
+            <img src="97EC3DC9-2172-4F9A-B74D-DB1B884FADD4-e1672531450715.jpeg" alt="Professor Pomona Sprout">
+            <div class="faculty-details">
+                <div class="faculty-name">Professor Pomona Sprout</div>
+                <div class="faculty-subject">Herbology</div>
+                <div class="faculty-bio">Head of Hufflepuff House and a knowledgeable herbologist. Guides students in the magical properties of plants.</div>
+            </div>
+        </div>
+
+        <div class="faculty">
+            <img src="e948eaf1db75f613e16eddef3d2d2a73.jpg" alt="Professor Sybill Trelawney">
+            <div class="faculty-details">
+                <div class="faculty-name">Professor Sybill Trelawney</div>
+                <div class="faculty-subject">Divination</div>
+                <div class="faculty-bio">Known for her prophetic abilities and teaches the art of seeing into the future.</div>
+            </div>
+        </div>
+
+        <div class="faculty">
+            <img src="richard-ayoade.webp" alt="Professor Cuthbert Binns">
+            <div class="faculty-details">
+                <div class="faculty-name">Professor Cuthbert Binns</div>
+                <div class="faculty-subject">History of Magic</div>
+                <div class="faculty-bio">A ghost who teaches the history of wizardry, spanning centuries of magical events.</div>
+            </div>
+           
+        </div>
+
+        <div class="faculty">
+            <img src="1400-x-1200-692x600.jpg" alt="Professor Minerva McGonagall">
+            <div class="faculty-details">
+                <div class="faculty-name">Professor Minerva McGonagall</div>
+                <div class="faculty-subject">Transfiguration</div>
+                <div class="faculty-bio">Head of Gryffindor House and a highly skilled witch. Teaches the art of transforming objects.</div>
+            </div>
+        </div>
+
+        <div class="faculty">
+            <img src="8f6dc2e6bb8af315764e33e5c3533320.jpg" alt="Professor Alastor">
+            <div class="faculty-details">
+                <div class="faculty-name">Professor Alastor</div>
+                <div class="faculty-subject">Defence Against the Dark Arts</div>
+                <div class="faculty-bio">Moody is appointed as Defence Against the Dark Arts teacher in Harry Potter and the Goblet of Fire (Harry's fourth year at Hogwarts). A former Auror, he gained his nickname for the magical eye he wears to replace one he lost in the line of duty</div>
+            </div>
+        </div>
+
+        <div class="faculty">
+            <img src="8221a72ec948f383a6d54c403d109436.jpg" alt="Professor Charity Burbage">
+            <div class="faculty-details">
+                <div class="faculty-name">Professor Charity Burbage</div>
+                <div class="faculty-subject">Muggle Studies</div>
+                <div class="faculty-bio">She runs afoul of the Death Eaters, whose philosophy asserts the supremacy of pure-bloods.</div>
+            </div>
+        </div>
+
+        <div class="faculty">
+            <img src="DoloresUmbridge_WB_F5_UmbridgeSmiling_Still_080615_Land.jpg" alt="Professor Dolores Jane Umbridge">
+            <div class="faculty-details">
+                <div class="faculty-name">Professor Dolores Jane Umbridge</div>
+                <div class="faculty-subject">Defence Against the Dark Arts</div>
+                <div class="faculty-bio">She was appointed by the Ministry of Magic to address the rumors concerning Voldemort's return that extended from there the previous summer.</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            &copy; Hogwarts University. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

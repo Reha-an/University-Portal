@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\test\Desktop\website\hogwarts-7917.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Hogwarts Alumni</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .logo {
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+        }
+        #nav {
+            background-color: black;
+            padding: 10px;
+        }
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        #nav li {
+            margin-right: 15px;
+        }
+        #nav li:last-child {
+            margin-right: 0;
+        }
+        #nav a {
+            color: gold;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        #nav a:hover {
+            color: grey;
+        }
+
+        @media (max-width: 768px) {
+            #nav ul {
+                flex-direction: column;
+            }
+            #nav li {
+                margin: 5px 0;
+            }
+            #nav .navbar-toggler {
+                margin-top: 5px;
+            }
+            #nav .collapse.show {
+                background-color: #333333;
+            }
+        }
+
+    #about {
+        background-color: #222;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    #about h1 {
+        font-size: 36px;
+        color: #9c3f00;
+        margin-bottom: 20px;
+    }
+
+    #about p {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    #events {
+        padding: 100px 0;
+        background-color: #222;
+    }
+
+    #events h2 {
+        font-size: 30px;
+        color: #9c3f00;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .event {
+        margin-bottom: 40px;
+    }
+
+    .event img {
+        width: 50%;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .event h3 {
+        font-size: 24px;
+        color: #9c3f00;
+        margin-top: 20px;
+        color: #fff;
+    }
+
+    .event p {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    #gallery {
+        background-color: #9c3f00;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    #gallery h2 {
+        font-size: 30px;
+        color: #ffeecc;
+        margin-bottom: 20px;
+    }
+
+    .gallery-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .gallery-images img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    #contact {
+        padding: 100px 0;
+        background-color: #222;
+    }
+
+    #contact h2 {
+        font-size: 30px;
+        color: #9c3f00;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #contact p {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    form textarea {
+        height: 150px;
+    }
+
+    form button {
+        padding: 10px 20px;
+        background-color: #9c3f00;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #alumni {
+        padding: 100px 0;
+        background-color: #ffeecc;
+        text-align: center;
+    }
+
+    #alumni h2 {
+        font-size: 30px;
+        color: #9c3f00;
+        margin-bottom: 20px;
+    }
+
+    .alumni-profiles {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .alumni-profile {
+        max-width: 300px;
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .alumni-profile img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .alumni-profile h3 {
+        font-size: 24px;
+        color: #9c3f00;
+        margin-bottom: 10px;
+    }
+
+    .alumni-profile p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    footer {
+        background-color: #9c3f00;
+        padding: 20px 0;
+        text-align: center;
+        color: #fff;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin: 0;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="nav">
+        <a href="home.html" class="navbar-brand">
+            <img src="hogwarts-7917.png" alt="Hogwarts Alumni" class="logo">
+            Hogwarts University
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Admissions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alumni.html">Alumni</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Academics.html">Academics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faculty.html">Faculty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="campus1.html">Campus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events and news.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <img src="hogwarts-7917.png" alt="Hogwarts Alumni" class="logo">
+            <h1>Welcome to Hogwarts Alumni</h1>
+            <p>Stay connected with your fellow Hogwarts graduates and relive the magical memories.</p>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <div class="event">
+                <img src="quiddich.webp" alt="Quidditch Tournament">
+                <h3>Quidditch Tournament</h3>
+                <p>Date: October 31, 2023</p>
+                <p>Location: Hogwarts Quidditch Pitch</p>
+            </div>
+            <div class="event">
+                <img src="potions.webp" alt="Potions Workshop">
+                <h3>Potions Workshop</h3>
+                <p>Date: November 15, 2023</p>
+                <p>Location: Hogwarts Potions Classroom</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Photo Gallery</h2>
+            <div class="gallery-images">
+                <img src="gallery1.jpg" alt="Gallery Image 1">
+                <img src="gallery2.webp" alt="Gallery Image 2">
+                <img src="gallery3.jpg" alt="Gallery Image 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="alumni">
+        <div class="container">
+            <h2>Alumni Profiles</h2>
+            <div class="alumni-profiles">
+                <div class="alumni-profile">
+                    <img src="entrevista_daniel_radcliffe.webp" alt="Alumni Profile 1">
+                    <h3>Harry Potter</h3>
+                    <p>House: Gryffindor</p>
+                    <p>Graduation Year: 1997</p>
+                </div>
+                <div class="alumni-profile">
+                    <img src="British-actress-Emma-Watson-2017.webp" alt="Alumni Profile 2">
+                    <h3>Hermione Granger</h3>
+                    <p>House: Gryffindor</p>
+                    <p>Graduation Year: 1997</p>
+                </div>
+                <div class="alumni-profile">
+                    <img src="Rupert-Grint-Servant-Dad-hot.webp" alt="Alumni Profile 3">
+                    <h3>Ron Weasley</h3>
+                    <p>House: Gryffindor</p>
+                    <p>Graduation Year: 1997</p>
+                </div>
+                <div class="alumni-profile">
+                    <img src="Rehaan Image 2023-05-27 at 11.47.15.jpg" alt="Alumni Profile 5">
+                    <h3>REHAAN</h3>
+                    <p>House: Slytherin</p>
+                    <p>Graduation Year: 1997</p>
+                </div>
+                <div class="alumni-profile">
+                    <img src="suhas Image 2023-07-08 at 23.26.19.jpg" alt="Alumni Profile 6">
+                    <h3>Suhas</h3>
+                    <p>House: Ravenclaw</p>
+                    <p>Graduation Year: 1998</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For any inquiries or to share your magical experiences, reach out to us.</p>
+            <form action="mailto:rehaanashraf2005@gmail.com" method="post">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Hogwarts University. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

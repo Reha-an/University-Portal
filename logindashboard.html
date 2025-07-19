@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Student Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Q9rSrjX6d0Y+lp7OT1to2jAZsfs2tOTBBZeWaSMYzh2BDCsj0g2j5DIWGU0gYzeV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpWw90G06vkvJL3P0t0jyZ8eJ7FqHLKpxR" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+    <style>
+        body {
+            background-color: #F8F8F8;
+            margin: 0 0 0 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .navbar {
+            background-color: #333333;
+        }
+        .navbar-brand {
+            color: gold;
+            font-size: 24px;
+            position: relative;
+            right: 50px;
+        }
+        .navbar-brand:hover {
+            color: grey;
+        }
+        .navbar-nav .nav-link {
+            color: gold;
+        }
+        .navbar-nav .nav-link:hover {
+            color: grey;
+        }
+        .dropdown-item{
+            color: gold;
+        }
+        .dropdown-item:hover{
+            background-color: grey;
+        }
+        .info{
+            width: 35%;
+            height: 100%;
+            float: right;
+            border: 2px solid gold;
+            border-top: 0px;
+            border-right: 0px;
+            text-align: center;
+            color: #333333;
+
+        }
+        .info img {
+            max-width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .info h2 {
+
+            font-size: 50px;
+            margin: 20px 0;
+        }
+
+        table {
+        width: 80%;
+        margin:auto;
+        margin-left: 30px;
+        border-collapse: collapse;
+        position: relative;
+        left: 20px;
+        }
+        td {
+        padding: 10px;
+        text-align: left;
+        font-size: 18px;
+        width: 30px;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid black;
+
+       }
+       .thought{
+        width: 65%;
+        }
+        .header{
+            background-color: #333333;
+            color: white;
+        }
+        .assignments {
+            width: 65%;
+            background-color: #f8f8f8;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid gold;
+            border-right: 0;
+        }
+        .assignments h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333333;
+            text-decoration: underline;  
+        }
+        .assignment {
+            margin-bottom: 10px;
+            margin: 10px 10px 10px 10px;
+        }
+        .subject {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .due-date {
+            color: #dc3545;
+        }
+        .announcements {
+            width: 65%;
+            background-color: #f8f8f8;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-top: 1px solid gold;
+        }
+        .announcements h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .announcement {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="logindashboard.html">
+                <img src="hogwarts-7917.png" alt="" class="d-inline-block align-text-bottom" width="35" height="35">
+                Hogwarts University</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="fee.html">Fee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="course-reg.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clubs.html">Clubs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="attendance.html">View Attendance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="info">
+        <img src="entrevista_daniel_radcliffe.webp" alt="Daniel Radcliffe Profile">
+        <h2>Daniel Radcliffe</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td><strong>House:</strong></td>
+                    <td>Gryffindor</td>
+                </tr>
+                <tr>
+                    <td><strong>Year:</strong></td>
+                    <td>Second Year</td>
+                </tr>
+                <tr>
+                    <td><strong>Date of Birth:</strong></td>
+                    <td>July 23, 1989</td>
+                </tr>
+                <tr>
+                    <td><strong>Wand:</strong></td>
+                    <td>Holly, Phoenix Feather Core, 11 inches</td>
+                </tr>
+                <tr>
+                    <td><strong>Blood Status:</strong></td>
+                    <td>Half-blood</td>
+                </tr>
+                <tr>
+                    <td><strong>Patronus:</strong></td>
+                    <td>Stag</td>
+                </tr>
+                <tr>
+                    <td><strong>Pet:</strong></td>
+                    <td>Hedwig (Snowy Owl)</td>
+                </tr>
+                <tr>
+                    <td><strong>House Common Room Password:</strong></td>
+                    <td>"Gryffindor Pride"</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="thought">
+        <div class="accordion" id="tableAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="tableHeader">
+                    <button class="accordion-button btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#tableCollapse" aria-expanded="false" aria-controls="tableCollapse">
+                        Classes
+                    </button>
+                </h2>
+                <div id="tableCollapse" class="accordion-collapse collapse" aria-labelledby="table1Header" data-bs-parent="#tableAccordion">
+                    <div class="accordion-body">
+                        <table class="table table-bordered">
+                            <tr class="header">
+                                <th>Day/Time</th>
+                                <th>Potions</th>
+                                <th>Transfiguration</th>
+                                <th>Defense Against the Dark Arts</th>
+                                <th>Charms</th>
+                              </tr>
+                              <tr>
+                                <td>Monday<br>1:00 PM - 3:00 PM</td>
+                                <td class="course">Advanced Potions</td>
+                                <td class="course">Animagus Training</td>
+                                <td class="course">Defense Advanced</td>
+                                <td class="course">Enchantments</td>
+                              </tr>
+                              <tr>
+                                <td>Wednesday<br>2:00 PM - 4:00 PM</td>
+                                <td class="course">Magical Herbology</td>
+                                <td class="course">Intermediate Transfiguration</td>
+                                <td class="course">Dark Arts Defense</td>
+                                <td class="course">Spell Creation</td>
+                              </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="announcements">
+        <h3>Announcements</h3>
+        <div class="announcement">
+            <span class="subject">Animagus Training:</span> Quiz on 19th August, 2023.
+        </div>
+        <div class="announcement">
+            <span class="subject">User Interface Design:</span> Phase-2 evaluation on Monday (i.e. 31st July, 2023) for Bootstrap.
+        </div>
+    </div>
+
+    <div class="assignments">
+        <h3>Assignments</h3>
+        <div class="assignment">
+            <span class="subject">Potions:</span> Brew a Calming Draught. <span class="due-date">Due on 15th September.</span>
+        </div>
+        <div class="assignment">
+            <span class="subject">Potions:</span> Prepare a Forgetfulness Potion. <span class="due-date">Due on 30th September.</span>
+        </div>
+        <div class="assignment">
+            <span class="subject">Transfiguration:</span> Transfigure a Teacup into a Mouse. <span class="due-date">Due on 20th September.</span>
+        </div>
+        <div class="assignment">
+            <span class="subject">Transfiguration:</span> Animate a Chess Set. <span class="due-date">Due on 5th October.</span>
+        </div>
+        <div class="assignment">
+            <span class="subject">Defense Against the Dark Arts:</span> Identify and Explain the Patronus Charm. <span class="due-date">Due on 25th September.</span>
+        </div>
+        <div class="assignment">
+            <span class="subject">Defense Against the Dark Arts:</span> Write a Defensive Strategy against a Boggart. <span class="due-date">Due on 10th October.</span>
+        </div>
+        <div class="assignment">
+            <span class="subject">Charms:</span> Cast the Levitation Charm on an Object. <span class="due-date">Due on 18th September.</span>
+        </div>
+        <div class="assignment">
+            <span class="subject">Charms:</span> Perform the Summoning Charm for an Object at a Distance. <span class="due-date">Due on 3rd October.</span>
+        </div>
+        <div class="assignment">
+            <span class="subject">Herbology:</span> Research the Properties of Mandrake Roots. <span class="due-date">Due on 22nd September.</span>
+        </div>
+        <div class="assignment">
+            <span class="subject">Herbology:</span> Identify and Classify Various Magical Plants. <span class="due-date">Due on 8th October.</span>
+        </div>
+        <div class="assignment">
+            <span class="subject">Astronomy:</span> Observe and Document Lunar Phases for a Month. <span class="due-date">Due on 24th September.</span>
+        </div>
+        <div class="assignment">
+            <span class="subject">Astronomy:</span> Identify and Map the Constellations in the Night Sky. <span class="due-date">Due on 12th October.</span>
+        </div>
+    </div>
+</body>
+</html>

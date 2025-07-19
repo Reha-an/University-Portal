@@ -1,0 +1,52 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Spotlight files
+.Spotlight-V100
+
+# macOS Trash
+.Trashes
+
+# macOS system volume info
+.VolumeIcon.icns
+
+# macOS Finder attributes
+._*
+
+# macOS Quarantine metadata
+com.apple.quarantine
+
+# macOS backup files
+*.swp
+*.swo
+*.tmp
+*.bak
+*~
+
+# Files from macOS apps
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# VS Code (common on macOS)
+.vscode/
+
+# IDEs (commonly used on macOS)
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Node (if using)
+node_modules/
+npm-debug.log*
+
+# Python (if applicable)
+__pycache__/
+*.py[cod]
+.venv/
+env/
+*.egg-info/
